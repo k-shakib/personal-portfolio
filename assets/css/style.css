@@ -1,0 +1,472 @@
+/* preprossec */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+html,
+body {
+  width: 100%;
+}
+section {
+  padding: 4rem 0;
+}
+a,
+.btn {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  font-size: 0.95rem;
+}
+ul {
+  list-style-type: none;
+}
+h1 {
+  font-size: 1.75rem;
+}
+h2 {
+  font-size: 1.2rem;
+}
+h3 {
+  font-size: 1rem;
+}
+p {
+  margin: 1rem 0;
+  color: gray;
+}
+
+/* global variable classes start here */
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+.container75 {
+  width: 75%;
+  margin: 0 auto;
+}
+[class^="flex"],
+[class~="flex"],
+[class|="flex"],
+[class$="flex"],
+[class*="flex"],
+.flex {
+  display: flex;
+}
+[class^="wrap"],
+[class~="wrap"],
+[class|="wrap"],
+[class$="wrap"],
+[class*="wrap"],
+.wrap {
+  flex-wrap: wrap;
+}
+
+[class^="f2"],
+[class~="f2"],
+[class|="f2"],
+[class$="f2"],
+[class*="f2"],
+.f2 {
+  flex: 2;
+}
+[class^="f3"],
+[class~="f3"],
+[class|="f3"],
+[class$="f3"],
+[class*="f3"],
+.f3 {
+  flex: 3;
+}
+
+[class^="center"],
+[class~="center"],
+[class|="center"],
+[class$="center"],
+[class*="center"],
+.center {
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+  align-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+[class^="between"],
+[class~="between"],
+[class|="between"],
+[class$="between"],
+[class*="between"],
+.between {
+  justify-content: space-between;
+}
+[class^="btn"],
+[class~="btn"],
+[class|="btn"],
+[class$="btn"],
+[class*="btn"],
+.btn {
+  padding: 0.7rem 1.5rem;
+  box-shadow: 0 5px 10px 0px #87ceeb;
+  border-radius: 10px;
+  margin: 1.5rem 0;
+  transition: all ease-in-out 0.5s;
+}
+[class^="color"],
+[class~="color"],
+[class|="color"],
+[class$="color"],
+[class*="color"],
+.color {
+  background: #006be4;
+}
+[class^="btn"]:hover,
+[class~="btn"]:hover,
+[class|="btn"]:hover,
+[class$="btn"]:hover,
+[class*="btn"]:hover,
+.btn:hover {
+  padding: 0.7rem 1.7rem;
+}
+/* global variable classes end here */
+
+/* navbar start here */
+.navbar {
+  padding: 1.5rem 0;
+  box-shadow: 0 0 10px 0px rgba(135, 206, 235, 0.361);
+}
+.navbar .hamburger {
+  display: none;
+}
+.menu ul li a {
+  margin-left: 1.8rem;
+}
+.menu ul li a:hover {
+  color: #1e90ff;
+}
+/* navbar end here */
+
+/* banner start here */
+.banner {
+  height: max(80vh, 230px);
+  background: linear-gradient(#00000044, #00000088), url(../images/banner.jpg);
+  background-position: center;
+}
+.banner h1 {
+  font-size: 3.5rem;
+}
+.banner h2 {
+  margin: 0.5rem 0 2rem;
+}
+.banner .bannerContants {
+  position: relative;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  color: #ffffff;
+}
+.banner .bannerContants a {
+  color: #ffffff;
+}
+/* banner end here */
+
+/* about section start here */
+.aboutMe .info {
+  margin: 0 0 2rem 0;
+}
+.aboutMe p span {
+  color: #006be4;
+}
+.aboutMe p a {
+  color: gray;
+}
+.aboutMe > a {
+  color: #ffffff;
+}
+
+/* about section end here */
+
+/* Projects section start here  */
+.projects {
+  padding: 2rem 0;
+}
+.projects .project {
+  height: 500px;
+  max-width: 420px;
+  margin: 1.2rem;
+  box-shadow: 0 3px 10px 0 rgba(106, 118, 145, 0.1);
+  border-radius: 10px;
+  flex: 1 1 256px;
+}
+.projects .project .top {
+  background: #f7faff;
+  border-radius: 10px 10px 0 0;
+  padding: 1rem;
+}
+.projects .project .top > div {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  margin: 0.5rem;
+}
+.projects .project .top .red {
+  background: red;
+}
+.projects .project .top .gray {
+  background: gray;
+}
+.projects .project .top .green {
+  background: green;
+}
+.projects .project .image {
+  overflow-y: scroll;
+  height: 390px;
+}
+.projects .project .image img {
+  width: 100%;
+}
+.projects .project .projectName {
+  border-radius: 0 0 10px 10px;
+  padding: 1rem;
+}
+
+/* Projects section end here  */
+
+/* skills and tool section start here  */
+.box {
+  width: 280px;
+  margin: 1.8rem 0;
+}
+.box .image {
+  height: 70px;
+}
+.box img {
+  max-width: 70px;
+  max-height: 70px;
+}
+.box h4 {
+  margin: 1rem;
+  font-weight: 500;
+}
+/* skills and tool section end here  */
+
+/* contact section start here */
+.contact .form {
+  width: 58%;
+}
+.contact .form > div input {
+  width: 48.5%;
+}
+.contact .form input,
+.contact .form textarea {
+  font-size: 1rem;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  border: 1px solid rgba(104, 139, 173, 0.15);
+  outline: none;
+  margin: 1rem 0;
+  width: 100%;
+}
+.contact .form input[type="submit"] {
+  width: unset;
+  color: #ffffff;
+}
+.contact .info {
+  width: 38%;
+}
+.contact .info .contactInfo {
+  margin: 4rem 0 0;
+}
+.contact .info .contactInfo > div {
+  align-items: center;
+  margin: 1.5rem 0;
+}
+.contact .info .contactInfo > div img {
+  margin: 0 1rem 0 0;
+  padding: 0.5rem;
+}
+.contact .info .contactInfo > div div p {
+  margin: 0.3rem 0;
+}
+/* contact section end here */
+
+/* footer section start here  */
+footer {
+  background: rgba(0, 128, 255, 0.05);
+  padding: 4rem 0;
+}
+footer > div > div img.btn {
+  background: #ffffff;
+  padding: 0.7rem;
+  margin: 1rem;
+}
+/* footer section end here  */
+
+/* responsive media start here */
+@media only screen and (max-width: 800px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  .banner h1 {
+    font-size: 2.8rem;
+  }
+  h2 {
+    font-size: 1.1rem;
+  }
+  h3 {
+    font-size: 0.9rem;
+  }
+  h4 {
+    font-size: 0.8rem;
+  }
+  p {
+    font-size: 0.85rem;
+  }
+  a,
+  .btn {
+    font-size: 0.85rem;
+  }
+  .btn {
+    padding: 0.5rem 0.8rem;
+    margin: 1.2rem 0;
+  }
+  .contact .form input,
+  .contact .form textarea {
+    font-size: 0.85rem;
+    padding: 0.5rem 0.8rem;
+    margin: 1rem 0;
+  }
+  .box {
+    width: 250px;
+    margin: 1.3rem 0;
+  }
+  .navbar {
+    padding: 1.1rem 0;
+  }
+  footer {
+    padding: 2.5rem 0;
+  }
+  section {
+    padding: 2rem 0;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .menu {
+    display: none;
+  }
+  .navbar .hamburger {
+    display: block;
+  }
+  .banner {
+    height: max(70vh, 230px);
+  }
+  h1 {
+    font-size: 1.3rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  h3 {
+    font-size: 0.85rem;
+  }
+  .btn {
+    margin: 1.2rem 0;
+  }
+  .contact .form input,
+  .contact .form textarea {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.6rem;
+    margin: 0.9rem 0;
+  }
+  .box {
+    width: 250px;
+    margin: 1.1rem 0;
+  }
+  .navbar {
+    padding: 1rem 0;
+  }
+  footer {
+    padding: 2.2rem 0;
+  }
+  section {
+    padding: 1.5rem 0;
+  }
+  #About > div {
+    display: block;
+  }
+  .contact {
+    display: block;
+  }
+  .contact .form {
+    width: 100%;
+  }
+  .contact .info {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 568px) {
+  .banner h1 {
+    font-size: 2.4rem;
+  }
+  .box {
+    width: 180px;
+    margin: 1rem 0;
+  }
+  section {
+    padding: 1.2rem 0;
+  }
+  .projects {
+    padding: 1rem 0;
+  }
+  .contact .form input,
+  .contact .form textarea {
+    margin: 0.5rem 0;
+  }
+}
+@media only screen and (max-width: 488px) {
+  .contact .info .contactInfo {
+    margin: 2rem 0 0;
+  }
+  .container75 {
+    width: 90%;
+  }
+  .banner h1 {
+    font-size: 2.1rem;
+  }
+  footer {
+    padding: 2rem 0;
+  }
+  footer > div > div img.btn {
+    padding: 0.5rem;
+    margin: 0.7rem;
+  }
+  .navbar {
+    padding: 0.8rem 0;
+  }
+  .skills,
+  .tools {
+    align-items: flex-start;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .box {
+    width: 100px;
+    margin: 0.9rem 0;
+  }
+  [class^="btn"]:hover,
+  [class~="btn"]:hover,
+  [class|="btn"]:hover,
+  [class$="btn"]:hover,
+  [class*="btn"]:hover,
+  .btn:hover {
+    padding: 0.5rem 1rem;
+  }
+}
+@media only Screen and (max-width: 320px) {
+}
+/* responsive media end here */
